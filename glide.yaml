@@ -1,0 +1,5 @@
+package: github.com/olx-ssafrica/third
+import:
+- package: k8s.io/client-go
+- package: github.com/spf13/cobra
+- package: github.com/spf13/pflag
