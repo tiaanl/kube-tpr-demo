@@ -17,7 +17,7 @@ go get github.com/Masterminds/glide
 glide install
 
 # Build the binary
-go install -v
+go build -v -o third .
 ```
 
 # Getting Started
@@ -25,27 +25,27 @@ go install -v
 Register the Namespace and ThirdPartyResource in kubernetes:
 
 ```bash
-third init
+./third init
 ```
 
 Add a new demo:
 
 ```bash
-third add --name=demo1
-third add --name=demo2
+./third add --name=demo1
+./third add --name=demo2
 ```
 
 Get a list of all the demos:
 
 ```bash
-third list
+./third list
 ```
 
 Watch demos as they get created:
 
 ```bash
-third watch
+./third watch
 
 # In another terminal start adding new demos
-third add --name=demo3
+./third add --name=demo3
 ```
